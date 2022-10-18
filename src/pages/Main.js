@@ -6,7 +6,7 @@ const Main = () => {
     return (
         <section>
             <Row className="g-0">
-                <Col md={12} lg={3}>
+                <Col md={12} lg={3} className="bg-warning">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tempore nisi nam sapiente nulla modi. Cumque voluptates praesentium temporibus labore atque tempore id maiores autem laudantium, ab placeat, assumenda sapiente molestiae ratione voluptatibus consectetur ipsum sed sint! Omnis assumenda error quaerat quam fugiat. Perferendis, modi! Iure impedit tempore ipsam adipisci dolores, fuga eius, assumenda pariatur, blanditiis aperiam odit? Dolor voluptatibus non molestias obcaecati unde dolorum expedita velit impedit sunt eius perferendis quibusdam incidunt ab sint ipsum, porro a odit nam officia, dolore aut illum commodi. Velit culpa, animi vitae consequuntur aliquam cumque libero voluptate quia ab amet voluptates eos odit.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dignissimos nobis fugit porro dolore placeat aperiam sed laborum et eaque ab doloribus iusto maiores expedita illum quos iste accusamus, perspiciatis nesciunt! Quas ut excepturi dignissimos expedita odio sint aut fugiat.
                 </Col>
