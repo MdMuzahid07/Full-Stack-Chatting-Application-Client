@@ -15,3 +15,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.navIcon ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navIcon ul li {}
