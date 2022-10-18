@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import SidebarNav from '../components/header/SidebarNav';
 
 const Main = () => {
     return (
@@ -8,7 +9,7 @@ const Main = () => {
                 <Col md={12} lg={3}>
                     <Row>
                         <Col xs={2}>
-                            navbar
+                            <SidebarNav />
                         </Col>
                         <Col md={10}>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tempore nisi nam sapiente nulla modi. Cumque voluptates praesentium temporibus labore atque tempore id maiores autem laudantium, ab placeat, assumenda sapiente molestiae ratione voluptatibus consectetur ipsum sed sint! Omnis assumenda error quaerat quam fugiat. Perferendis, modi! Iure impedit tempore ipsam adipisci dolores, fuga eius, assumenda pariatur, blanditiis aperiam odit? Dolor voluptatibus non molestias obcaecati unde dolorum expedita velit impedit sunt eius perferendis quibusdam incidunt ab sint ipsum, porro a odit nam officia, dolore aut illum commodi. Velit culpa, animi vitae consequuntur aliquam cumque libero voluptate quia ab amet voluptates eos odit.
