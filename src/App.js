@@ -1,8 +1,9 @@
+import Main from "./pages/Main";
 
 function App() {
   return (
     <div>
-      <h2>chat cloud</h2>
+      <Main />
     </div>
   );
 }
