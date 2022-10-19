@@ -8,7 +8,7 @@ const InboxFooter = () => {
                 <Container>
                     <div className="d-flex">
                         <input
-                            style={{ width: "600px" }}
+                            style={{ width: "400px" }}
                             className="rounded-3 p-3 border border-2" placeholder="write here" name="" ></input>
                         <Button variant="dark ms-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M2.825 20.2V3.8L22.25 12ZM5 16.9 16.625 12 5 7.1v3.3l6.1 1.6L5 13.6Zm0 0V7.1v6.5Z" fill="#fff" /></svg>
