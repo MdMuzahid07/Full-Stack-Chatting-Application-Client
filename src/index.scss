@@ -74,6 +74,27 @@ body {
 
 /* navbar design end */
 
+// custom sign in page start
+.custom-signUp-login {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.custom-signUp-login img {
+  width: 300px;
+  height: 300px;
+}
+
+.custom-input {
+  height: 50px;
+  width: 300px;
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  padding: 0rem 1rem;
+}
+// custom sign in page end
+
 ::-webkit-scrollbar {
   width: 5px;
 }
