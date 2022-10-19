@@ -7,7 +7,7 @@ import NavLinks from './NavLinks';
 
 const Header = () => {
     return (
-        <header className="position-relative custom-bottom-nav">
+        <header className="position-relative custom-bottom-nav bg-white">
             <div className="custom-nav py-3">
                 <Link to="/">
                     <img
