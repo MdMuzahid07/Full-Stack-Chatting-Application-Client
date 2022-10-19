@@ -7,7 +7,7 @@ import Main from "./pages/Main";
 
 function App() {
   return (
-    <section className=" border border-2 px-0">
+    <section className="px-0">
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signUp" element={<SignUp />} />

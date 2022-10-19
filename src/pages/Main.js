@@ -48,7 +48,7 @@ const Main = () => {
                     </div>
                 </Col>
             </Row>
-        </section>
+        </section >
     );
 };
 

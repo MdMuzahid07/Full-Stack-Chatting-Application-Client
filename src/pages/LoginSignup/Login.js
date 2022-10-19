@@ -6,12 +6,12 @@ const Login = () => {
     return (
         <section className=" bg-white d-flex justify-content-center align-items-center custom-signUp-login">
             <div className="bg-black text-white rounded-5 p-5">
-                <Row className="g-4">
+                <Row className="g-4 p-2">
                     <Col>
                         <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="" />
                     </Col>
                     <Col>
-                        <p className="mb-3 fw-bold h4">PLEASE LOGIN</p>
+                        <p className="mb-3 fw-bold h4">Please Login</p>
                         <div className="mb-2">
                             <input className="custom-input" type="email" name="email" placeholder="your email address" />
                             <br />

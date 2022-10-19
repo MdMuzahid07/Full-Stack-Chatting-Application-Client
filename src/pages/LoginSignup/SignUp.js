@@ -11,7 +11,7 @@ const SignUp = () => {
                         <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="" />
                     </Col>
                     <Col>
-                        <p className="mb-3 fw-bold h4">PLEASE SignUp</p>
+                        <p className="mb-3 fw-bold h4">Please SignUp</p>
                         <div className="mb-2">
                             <input className="custom-input" type="text" name="name" placeholder="your name" />
                             <br />
