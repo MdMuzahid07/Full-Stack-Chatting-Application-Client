@@ -1,5 +1,7 @@
 import React from 'react';
+import { ButtonGroup, Dropdown, DropdownButton } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import DropDownProfile from './DropDownProfile';
 import NavLinks from './NavLinks';
 
 
@@ -20,15 +22,7 @@ const Header = () => {
                     <NavLinks />
                 </div>
                 <div className="custom-profile">
-                    <Link to="/">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o04d9prZDVWlxJpl_atIHLQ6gUxxjjku4kpkRRozFXmx3LRqeuVLKiG2XIgq7U-nQTk&usqp=CA"
-                            width="50"
-                            height="50"
-                            className=" rounded-circle border border-2"
-                            alt="ChatCloud_logo"
-                        />
-                    </Link>
+                    <DropDownProfile />
                 </div>
             </div>
 
