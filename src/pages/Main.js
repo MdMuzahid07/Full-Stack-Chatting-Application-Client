@@ -35,11 +35,13 @@ const Main = () => {
                     </Row>
                 </Col>
                 <Col md={12} lg={8} className="d-none d-lg-block">
-                    <div className="max-height px-3 bg-white">
+                    <div className="max-height bg-white">
                         <div className="sticky-top">
                             <InboxHeader />
                         </div>
-                        <Inbox />
+                        <div className="px-3">
+                            <Inbox />
+                        </div>
                         <div className="sticky-bottom">
                             <InboxFooter />
                         </div>
