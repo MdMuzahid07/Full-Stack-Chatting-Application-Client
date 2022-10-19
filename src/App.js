@@ -1,13 +1,14 @@
-import Header from "./components/header/Header";
+import { Container } from "react-bootstrap";
+import BottomNav from "./components/header/BottomNav";
 import Main from "./pages/Main";
 
 
 function App() {
   return (
-    <section>
+    <Container className=" border border-2 px-0">
       <Main />
-      <Header />
-    </section>
+      <BottomNav />
+    </Container>
   );
 }
 
