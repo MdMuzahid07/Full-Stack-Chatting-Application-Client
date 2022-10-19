@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <Navbar bg="light" fixed="bottom">
+        <Navbar fixed="bottom" className="bg-dark text-light">
             <Navbar.Brand href="#">
                 <img
                     src="https://i.ibb.co/cycQRDb/Chat-Cloud.png"
