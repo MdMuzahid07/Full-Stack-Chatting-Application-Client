@@ -19,9 +19,9 @@ const Profile = () => {
             </div>
             <div className="p-4">
                 <p>
-                    <h2>working</h2>
                     <small>
-                        Lorem ipsum dolo quos harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dicta accusamus molestias harum eius fugiat eaque eveniet rerum! Impedit tenetur nisi perspiciatis praesentium minima pariatur cumque in expedita! Ducimus impedit cupiditate ratione consectetur quia provident adipisci numquam repellendus harum sed.
+                        Hi , I'm Mr Cat, and i eat fish, and my
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dicta accusamus molestias harum eius fugiat eaque eveniet rerum! Impedit tenetur nisi perspiciatis praesentium minima pariatur cumque in expedita! Ducimus impedit cupiditate ratione consectetur quia provident adipisci numquam repellendus harum sed.
                     </small>
                 </p>
                 <div className="mt-5">
