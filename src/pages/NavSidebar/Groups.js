@@ -1,4 +1,5 @@
 import React from 'react';
+import GroupCard from '../../components/groupsComponents/GroupCard';
 
 const Groups = () => {
     return (
@@ -19,7 +20,13 @@ const Groups = () => {
                 </div>
             </div>
             <div className="p-4">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa atque reiciendis, unde iusto cum laborum incidunt vero, sit error ipsam, qui quae illum! Velit, eos eaque maiores facilis ullam, et alias asperiores odit perspiciatis totam, deleniti corrupti omnis iste in consectetur quam error eligendi animi. Praesentium, quam cupiditate similique perspiciatis commodi omnis eaque, iusto itaque ipsam sit quos repellat quasi officia fuga repudiandae deleniti est fugit id quisquam inventore facere pariatur necessitatibus in sed. Adipisci corporis, quis distinctio omnis rerum dolor culpa vero libero sapiente laborum qui in. Aut eaque fuga soluta quo quis quidem odit vel tenetur recusandae dolore ullam provident hic animi, autem quibusdam quasi quaerat repudiandae, sit magnam? Nam blanditiis officiis eius iure, rem molestias reprehenderit non est deleniti vitae ut nulla cum at iusto sed saepe, exercitationem corrupti commodi atque ducimus explicabo excepturi, error consequatur tenetur. Aperiam qui ea dolorum itaque dolorem necessitatibus nisi eaque incidunt animi placeat quasi repellendus sapiente neque voluptate et exercitationem, eum officiis laudantium! Reiciendis, hic porro esse tempore quidem non labore delectus commodi, asperiores enim sit doloremque atque, eligendi modi. Ad minima at nesciunt doloremque? Voluptatem, id optio tenetur ducimus quisquam ab non nemo odit dignissimos laudantium nesciunt alias distinctio voluptas saepe quasi quas accusantium aliquid tempora commodi reprehenderit sed quia accusamus corporis. Recusandae odio molestias amet, vero saepe dolorem laborum mollitia velit quaerat asperiores, impedit quod corporis maiores consectetur, distinctio corrupti iste nulla cum dolore quis vel veniam est! Veniam vitae rerum odit distinctio qui ullam saepe et. Assumenda reiciendis commodi beatae officia odit libero voluptatem, nesciunt quisquam nisi exercitationem ullam iusto aperiam sint dolore. Quidem, praesentium iusto. Quia, porro facere. Corporis sapiente, nobis sed sit quam possimus id quo cumque quod saepe fugit neque. Dolorem magni similique eveniet nobis debitis provident soluta, commodi, officia rem voluptates repellendus exercitationem incidunt?</p>
+                <GroupCard />
+                <GroupCard />
+                <GroupCard />
+                <GroupCard />
+                <GroupCard />
+                <GroupCard />
+                <GroupCard />
             </div>
         </section>
     );
