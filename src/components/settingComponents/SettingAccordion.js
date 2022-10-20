@@ -1,6 +1,5 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
-import { Form } from 'react-router-dom';
 
 const SettingAccordion = () => {
     return (
