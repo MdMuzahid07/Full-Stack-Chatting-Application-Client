@@ -1,4 +1,5 @@
 import React from 'react';
+import ActiveFriendSlider from '../../components/chatComponents/ActiveFriendSlider';
 import FriendProfile from '../../components/chatComponents/FriendProfile';
 
 const Chats = () => {
@@ -14,7 +15,7 @@ const Chats = () => {
                         </span>
                     </div>
                     <div>
-                        <h2>active friend slider</h2>
+                        <ActiveFriendSlider />
                     </div>
                 </div>
                 <p className="h5 mt-3">Recent</p>

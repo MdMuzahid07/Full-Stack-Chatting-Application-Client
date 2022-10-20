@@ -34,6 +34,11 @@ body {
   box-shadow: 0px 0px 5px 0px rgb(176, 176, 176);
 }
 
+.img-custom {
+  object-fit: cover;
+  object-position: center;
+}
+
 /* navbar design start */
 
 .custom-nav {

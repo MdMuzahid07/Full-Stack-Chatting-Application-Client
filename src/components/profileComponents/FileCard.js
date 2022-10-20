@@ -4,7 +4,7 @@ const FileCard = () => {
     return (
         <section className="d-flex justify-content-between align-items-center bg-light border rounded-2 p-2 mb-3">
             <div>
-                <img className="border border-2" style={{ height: "50px", width: "50px", borderRadius: "10px" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIi_a9WP926ruhJ1h6znk6nYQndHRnQ995Ig&usqp=CAU" alt="" />
+                <img className="border border-2 img-custom" style={{ height: "50px", width: "50px", borderRadius: "10px" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIi_a9WP926ruhJ1h6znk6nYQndHRnQ995Ig&usqp=CAU" alt="" />
             </div>
             <div className="d-flex justify-content-between">
                 <span>

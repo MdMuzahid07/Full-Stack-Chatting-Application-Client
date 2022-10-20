@@ -4,7 +4,7 @@ const MessageBox = () => {
     return (
         <section className="d-flex">
             <div>
-                <img className="border border-2 border-dark mt-4" style={{ height: "50px", width: "50px", borderRadius: "50%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIi_a9WP926ruhJ1h6znk6nYQndHRnQ995Ig&usqp=CAU" alt="" />
+                <img className="border border-2 border-dark mt-4 img-custom" style={{ height: "50px", width: "50px", borderRadius: "50%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIi_a9WP926ruhJ1h6znk6nYQndHRnQ995Ig&usqp=CAU" alt="" />
             </div>
             <div
                 style={{ width: "400px", minHeight: "100px" }}

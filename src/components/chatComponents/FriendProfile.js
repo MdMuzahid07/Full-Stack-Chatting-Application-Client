@@ -5,7 +5,7 @@ const FriendProfile = () => {
         <section className="d-flex justify-content-between align-items-center mb-3">
             <div className="d-flex">
                 <span>
-                    <img className="border border-2" style={{ height: "60px", width: "60px", borderRadius: "50%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIi_a9WP926ruhJ1h6znk6nYQndHRnQ995Ig&usqp=CAU" alt="" />
+                    <img className="border border-2 img-custom" style={{ height: "60px", width: "60px", borderRadius: "50%" }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Stray_kitten_Rambo002.jpg/1200px-Stray_kitten_Rambo002.jpg" alt="" />
                 </span>
                 <span className="ms-2 mt-2">
                     <p className="fw-bold lh-1">Name</p>
