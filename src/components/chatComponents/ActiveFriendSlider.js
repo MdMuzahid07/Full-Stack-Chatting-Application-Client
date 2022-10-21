@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
 import Slider from 'react-slick';
 
 const ActiveFriendSlider = () => {
@@ -18,7 +17,6 @@ const ActiveFriendSlider = () => {
                     slidesToShow: 10,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
                 }
             },
             {
