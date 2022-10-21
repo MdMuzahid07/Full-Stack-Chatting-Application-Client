@@ -12,7 +12,7 @@ const GroupCard = () => {
                 </div>
             </div>
             <div>
-                <span className="bg-light rounded-pill p-2">7 <small>members</small></span>
+                <span className="bg-light text-dark fw-bold rounded-circle p-2">7+</span>
             </div>
         </section>
     );

@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const InboxHeader = () => {
     return (
-        <Navbar className="bg-light border-b-custom">
+        <Navbar className="bg-white border-b-custom">
             <Container>
                 <Navbar.Brand href="#home">
                     <div className="d-flex">

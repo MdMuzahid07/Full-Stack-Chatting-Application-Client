@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const SignUp = () => {
     return (
-        <section className=" bg-white d-flex justify-content-center align-items-center custom-signUp-login">
+        <section className="d-flex justify-content-center align-items-center custom-signUp-login">
             <div className="bg-black text-white rounded-5 p-5">
                 <Row className="g-4">
                     <Col>
