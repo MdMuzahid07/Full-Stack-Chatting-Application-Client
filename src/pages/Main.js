@@ -5,8 +5,8 @@ import Header from '../components/header/Header';
 import InboxFooter from './Inbox/footer/InboxFooter';
 import InboxHeader from './Inbox/header/InboxHeader';
 import Inbox from './Inbox/Inbox';
+import AddFriends from './NavSidebar/AddFriends';
 import Chats from './NavSidebar/Chats';
-import Contacts from './NavSidebar/Contacts';
 import Groups from './NavSidebar/Groups';
 import Profile from './NavSidebar/Profile';
 import Settings from './NavSidebar/Settings';
@@ -27,7 +27,7 @@ const Main = () => {
                                     <Route path="/" element={<Chats />} />
                                     <Route path="/profile" element={<Profile />} />
                                     <Route path="/groups" element={<Groups />} />
-                                    <Route path="/contacts" element={<Contacts />} />
+                                    <Route path="/addFriends" element={<AddFriends />} />
                                     <Route path="/settings" element={<Settings />} />
                                 </Routes>
                             </div>
