@@ -11,10 +11,8 @@ const Header = () => {
             <div className="custom-nav py-3">
                 <Link to="/">
                     <img
-                        src="https://i.ibb.co/cycQRDb/Chat-Cloud.png"
-                        width="53"
-                        height="53"
-                        className="d-inline-block align-top"
+                        src="https://i.ibb.co/mCQxqTr/Chat-Cloud.png"
+                        className="d-inline-block align-top img-fluid px-2"
                         alt="ChatCloud_logo"
                     />
                 </Link>

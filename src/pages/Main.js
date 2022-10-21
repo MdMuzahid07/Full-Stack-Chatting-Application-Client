@@ -22,7 +22,7 @@ const Main = () => {
                             <Header />
                         </Col>
                         <Col xs={12} lg={10}>
-                            <div className="max-height bg-lightBlue">
+                            <div className="max-height bg-lightBlue text-white">
                                 <Routes>
                                     <Route path="/" element={<Chats />} />
                                     <Route path="/profile" element={<Profile />} />
