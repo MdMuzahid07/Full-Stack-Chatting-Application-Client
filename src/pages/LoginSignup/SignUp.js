@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import SocialLogin from './SocialLogin';
 
 const SignUp = () => {
     return (
@@ -21,6 +22,9 @@ const SignUp = () => {
                             <button type="submit" className="btn btn-outline btn-light rounded-pill">Submit</button>
                         </div>
                         <p><small>Already have a account<Link to="/login"><span className="text-primary fw-bold ms-2">Login</span></Link></small></p>
+                        <div>
+                            <SocialLogin />
+                        </div>
                     </Col>
                 </Row>
             </div>
