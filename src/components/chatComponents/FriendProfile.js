@@ -9,7 +9,7 @@ const FriendProfile = () => {
                 </span>
                 <span className="ms-2 mt-2">
                     <p className="fw-bold lh-1">Name</p>
-                    <p className="lh-1"><small>Last message</small></p>
+                    <p className="lh-1"><small>From</small></p>
                 </span>
             </div>
             <div>
