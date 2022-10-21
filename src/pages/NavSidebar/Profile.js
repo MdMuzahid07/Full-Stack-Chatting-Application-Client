@@ -3,7 +3,7 @@ import ProfileAccordion from '../../components/profileComponents/ProfileAccordio
 
 const Profile = () => {
     return (
-        <section>
+        <section className="min-height">
             <div style={{ minHeight: "250px", width: "100%" }} className="sticky-top bg-lightBlue p-4 border-bottom border-light">
 
                 <div className="d-flex justify-content-between ">

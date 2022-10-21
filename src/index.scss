@@ -22,6 +22,10 @@ body {
   overflow-y: scroll;
 }
 
+.min-height {
+  min-height: 100vh;
+}
+
 .bg-lightBlue {
   background-color: rgb(231, 234, 255);
 }

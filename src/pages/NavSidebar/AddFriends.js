@@ -3,7 +3,7 @@ import FriendProfile from '../../components/chatComponents/FriendProfile';
 
 const AddFriends = () => {
     return (
-        <section>
+        <section className="min-height">
             <div style={{ minHeight: "200px", width: "100%" }} className="sticky-top bg-lightBlue p-4 border-bottom border-light">
                 <p className="h4 mb-3">Add Friends</p>
                 <div className="mt-3">

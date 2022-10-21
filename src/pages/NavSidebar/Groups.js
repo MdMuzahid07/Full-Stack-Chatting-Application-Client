@@ -3,7 +3,7 @@ import GroupCard from '../../components/groupsComponents/GroupCard';
 
 const Groups = () => {
     return (
-        <section>
+        <section className="min-height">
             <div style={{ minHeight: "200px", width: "100%" }} className="sticky-top bg-lightBlue p-4 border-bottom border-light">
                 <p className="h4 mb-3">Groups</p>
                 <div className="mt-3">
