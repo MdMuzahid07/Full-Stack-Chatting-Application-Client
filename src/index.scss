@@ -66,12 +66,9 @@ body {
 
 .bottom-navbar {
   height: 50px;
-  background: rgba(255, 255, 255, 0.541);
   position: fixed;
-  bottom: 5px;
-  right: 1rem;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 5px;
+  bottom: 0;
+  right: 10px;
   display: flex;
   padding: 1rem;
 }
