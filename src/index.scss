@@ -43,6 +43,10 @@ body {
   object-position: center;
 }
 
+.custom-chat-input {
+  width: 500px;
+}
+
 /* navbar design start */
 
 .custom-nav {
@@ -117,4 +121,15 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: rgb(129, 129, 129);
+}
+
+// $media-desktop: "only screen and (max-width : 1024px)";
+// $media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+// $media-mobile-sm: "only screen and (max-width : 480px)";
+
+@media #{$media-mobile} {
+  .custom-chat-input {
+    max-width: 230px;
+  }
 }
