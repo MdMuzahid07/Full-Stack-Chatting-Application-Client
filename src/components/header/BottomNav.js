@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import DropDownProfile from './DropDownProfile';
 const BottomNav = () => {
     return (
         <div className="d-lg-none bottom-navbar">

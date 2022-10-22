@@ -6,7 +6,7 @@ import SocialLogin from './SocialLogin';
 const SignUp = () => {
     return (
         <section className="d-flex justify-content-center align-items-center custom-signUp-login">
-            <div className="bg-black text-white rounded-5 p-5">
+            <div className="bg-black text-white p-5">
                 <Row className="g-4">
                     <Col>
                         <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="" />
