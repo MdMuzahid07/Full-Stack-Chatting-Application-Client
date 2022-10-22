@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Form, InputGroup, Navbar } from 'react-bootstrap';
+import { Button, Container, Navbar } from 'react-bootstrap';
 
 const InboxFooter = () => {
     return (

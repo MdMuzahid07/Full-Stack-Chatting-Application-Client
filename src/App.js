@@ -3,6 +3,7 @@ import BottomNav from "./components/header/BottomNav";
 import Login from "./pages/LoginSignup/Login";
 import SignUp from "./pages/LoginSignup/SignUp";
 import Main from "./pages/Main";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 function App() {
