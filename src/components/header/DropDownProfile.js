@@ -7,7 +7,7 @@ const DropDownProfile = () => {
     return (
         <Dropdown>
             <Dropdown.Toggle id="dropdown-toggle" variant="">
-                <img className="border border-2 border-white mt-4 img-fluid" style={{ height: "50px", width: "50px", borderRadius: "50%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIi_a9WP926ruhJ1h6znk6nYQndHRnQ995Ig&usqp=CAU" alt="" />
+                <img className="border border-2 border-white mt-4 img-fluid rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIi_a9WP926ruhJ1h6znk6nYQndHRnQ995Ig&usqp=CAU" alt="" />
             </Dropdown.Toggle>
 
             <Dropdown.Menu variant="light">
