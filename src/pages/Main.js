@@ -16,7 +16,7 @@ const Main = () => {
     return (
         <section>
             <Row className="g-0">
-                <Col md={12} lg={4}>
+                <Col md={12} lg={3}>
                     <Row className="g-0">
                         <Col lg={2} className="d-none d-lg-block">
                             <Header />
@@ -34,7 +34,7 @@ const Main = () => {
                         </Col>
                     </Row>
                 </Col>
-                <Col md={12} lg={8} className="d-none d-lg-block">
+                <Col md={12} lg={9} className="d-none d-lg-block">
                     <div className="max-height bg-white">
                         <div className="sticky-top">
                             <InboxHeader />

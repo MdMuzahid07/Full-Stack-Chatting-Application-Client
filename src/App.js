@@ -4,6 +4,7 @@ import Login from "./pages/LoginSignup/Login";
 import SignUp from "./pages/LoginSignup/SignUp";
 import Main from "./pages/Main";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ToastNotification from "./components/toastNotification/ToastNotification";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       </Routes>
       <Main />
       <BottomNav />
+      <ToastNotification />
     </section>
   );
 }

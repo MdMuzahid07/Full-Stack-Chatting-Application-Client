@@ -1,7 +1,7 @@
 import React from 'react';
 import { ToastContainer } from 'react-bootstrap';
 import { Slide } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const ToastNotification = () => {
