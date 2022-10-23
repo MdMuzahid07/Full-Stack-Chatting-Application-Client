@@ -1,6 +1,5 @@
 import React from 'react';
 import AddFriendProfile from '../../components/addFriendComponents/AddFriendProfile';
-import FriendProfile from '../../components/chatComponents/FriendProfile';
 
 const AddFriends = () => {
     return (
