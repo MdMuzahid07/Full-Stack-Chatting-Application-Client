@@ -1,4 +1,5 @@
 import React from 'react';
+import AddFriendProfile from '../../components/addFriendComponents/AddFriendProfile';
 import FriendProfile from '../../components/chatComponents/FriendProfile';
 
 const AddFriends = () => {
@@ -20,13 +21,7 @@ const AddFriends = () => {
                 </div>
             </div>
             <div className="p-4">
-                <FriendProfile />
-                <FriendProfile />
-                <FriendProfile />
-                <FriendProfile />
-                <FriendProfile />
-                <FriendProfile />
-                <FriendProfile />
+                <AddFriendProfile />
             </div>
         </section>
     );
