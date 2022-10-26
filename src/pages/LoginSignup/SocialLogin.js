@@ -1,5 +1,5 @@
 import React from 'react';
-import { signInWithPopup, GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider, GithubAuthProvider, FacebookAuthProvider } from "firebase/auth";
 
 import { Button } from 'react-bootstrap';
 import { auth } from '../../authentication/firebaseInitial';
@@ -27,9 +27,30 @@ const SocialLogin = () => {
             });
     };
 
+    // Facebook login
+
+    const facebookProvider = new FacebookAuthProvider();
+
+    const handleFBAuth = () => {
+        signInWithPopup(auth, facebookProvider)
+            .then((result) => {
+                const user = result.user;
+                if (user) {
+                    toast.success(`Welcome ${user.displayName}`)
+                    navigate("/profile");
+                }
+            })
+            .catch((err) => {
+                const errorMessage = err.message;
+                toast.error(errorMessage)
+            });
+
+    };
+
     //github login
 
     const githubProvider = new GithubAuthProvider();
+
     const handleGithubAuth = () => {
 
         signInWithPopup(auth, githubProvider)
@@ -58,7 +79,7 @@ const SocialLogin = () => {
                 </Button>
             </div>
             <div className="me-2">
-                <Button onClick={handleGithubAuth} variant="outline-dark">
+                <Button onClick={handleFBAuth} variant="outline-dark">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                         width="30" height="30"
                         viewBox="0 0 50 50"
@@ -66,7 +87,7 @@ const SocialLogin = () => {
                 </Button>
             </div>
             <div>
-                <Button variant="outline-dark">
+                <Button onClick={handleGithubAuth} variant="outline-dark">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                         width="30" height="30"
                         viewBox="0 0 64 64"
