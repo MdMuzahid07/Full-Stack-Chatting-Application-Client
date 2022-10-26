@@ -31,7 +31,13 @@ const DropDownProfile = () => {
     return (
         <Dropdown>
             <Dropdown.Toggle id="dropdown-toggle" variant="">
-                <img className="border border-2 border-white mt-4 img-fluid rounded-circle" src={user?.photoURL ? user?.photoURL : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o04d9prZDVWlxJpl_atIHLQ6gUxxjjku4kpkRRozFXmx3LRqeuVLKiG2XIgq7U-nQTk&usqp=CA"} alt="" />
+                <img
+                    src={user?.photoURL ? user?.photoURL : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o04d9prZDVWlxJpl_atIHLQ6gUxxjjku4kpkRRozFXmx3LRqeuVLKiG2XIgq7U-nQTk&usqp=CA"}
+                    width="50"
+                    height="50"
+                    className="rounded-circle border border-2 border-light"
+                    alt="profile_image"
+                />
             </Dropdown.Toggle>
 
             <Dropdown.Menu variant="light">
@@ -41,7 +47,7 @@ const DropDownProfile = () => {
                         width="50"
                         height="50"
                         className=" rounded-circle border border-2 border-dark"
-                        alt="ChatCloud_logo"
+                        alt="profile_image"
                     />
                 </Dropdown.Item>
                 <Dropdown.Divider />

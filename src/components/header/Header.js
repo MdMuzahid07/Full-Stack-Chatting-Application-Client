@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className="position-relative custom-bottom-nav bg-white">
             <div className="custom-nav py-3">
-                <Link to="/">
+                <Link to="/profile">
                     <img
                         src="https://i.ibb.co/mCQxqTr/Chat-Cloud.png"
                         className="d-inline-block align-top img-fluid px-2"
