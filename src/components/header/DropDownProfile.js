@@ -1,30 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { auth } from '../../authentication/firebaseInitial';
-import { signOut } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { toast } from 'react-toastify';
 
 const DropDownProfile = () => {
+    const [user, setUser] = useState();
 
     const handleSignOut = () => {
         signOut(auth).then(() => {
-            toast.success("logOut successful");
+            toast.success("LogOut successful");
         }).catch((err) => {
             toast.error(err.message);
         });
     };
 
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setUser(user);
+                console.log(user)
+            } else {
+
+            }
+        });
+    }, []);
+
+
     return (
         <Dropdown>
             <Dropdown.Toggle id="dropdown-toggle" variant="">
-                <img className="border border-2 border-white mt-4 img-fluid rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIi_a9WP926ruhJ1h6znk6nYQndHRnQ995Ig&usqp=CAU" alt="" />
+                <img className="border border-2 border-white mt-4 img-fluid rounded-circle" src={user?.photoURL ? user?.photoURL : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o04d9prZDVWlxJpl_atIHLQ6gUxxjjku4kpkRRozFXmx3LRqeuVLKiG2XIgq7U-nQTk&usqp=CA"} alt="" />
             </Dropdown.Toggle>
 
             <Dropdown.Menu variant="light">
                 <Dropdown.Item eventKey="0">
                     <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o04d9prZDVWlxJpl_atIHLQ6gUxxjjku4kpkRRozFXmx3LRqeuVLKiG2XIgq7U-nQTk&usqp=CA"
+                        src={user?.photoURL ? user?.photoURL : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o04d9prZDVWlxJpl_atIHLQ6gUxxjjku4kpkRRozFXmx3LRqeuVLKiG2XIgq7U-nQTk&usqp=CA"}
                         width="50"
                         height="50"
                         className=" rounded-circle border border-2 border-dark"

@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ProfileAccordion from '../../components/profileComponents/ProfileAccordion';
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from '../../authentication/firebaseInitial';
 
 const Profile = () => {
+
+    const [user, setUser] = useState();
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setUser(user)
+            }
+        });
+    }, []);
+
     return (
         <section className="min-height">
             <div style={{ minHeight: "250px", width: "100%" }} className="sticky-top bg-lightBlue p-4 border-bottom border-light">
@@ -13,9 +25,13 @@ const Profile = () => {
                     </span>
                 </div>
                 <div className="d-flex justify-content-center align-items-center">
-                    <img className="border border-2 my-2" style={{ height: "100px", width: "100px", borderRadius: "50%" }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIi_a9WP926ruhJ1h6znk6nYQndHRnQ995Ig&usqp=CAU" alt="" />
+                    <img
+                        className="border border-2 my-2"
+                        src={user?.photoURL ? user.photoURL : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o04d9prZDVWlxJpl_atIHLQ6gUxxjjku4kpkRRozFXmx3LRqeuVLKiG2XIgq7U-nQTk&usqp=CA"}
+                        style={{ height: "100px", width: "100px", borderRadius: "50%" }}
+                        alt="profile_image" />
                 </div>
-                <h5 className="text-center mt-3">Mr Cat</h5>
+                <h5 className="text-center mt-3">{user?.displayName ? user.displayName : "Mr Cat"}</h5>
             </div>
             <div className="p-4">
                 <p>
