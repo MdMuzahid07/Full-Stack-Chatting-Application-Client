@@ -24,7 +24,7 @@ const Main = () => {
                         <Col xs={12} lg={10}>
                             <div className="max-height bg-lightBlue text-white">
                                 <Routes>
-                                    <Route path="/" element={<Chats />} />
+                                    <Route path="/chats" element={<Chats />} />
                                     <Route path="/profile" element={<Profile />} />
                                     <Route path="/groups" element={<Groups />} />
                                     <Route path="/addFriends" element={<AddFriends />} />

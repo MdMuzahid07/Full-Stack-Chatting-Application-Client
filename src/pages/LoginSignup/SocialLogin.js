@@ -1,36 +1,50 @@
 import React from 'react';
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
+
 import { Button } from 'react-bootstrap';
 import { auth } from '../../authentication/firebaseInitial';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const SocialLogin = () => {
-    const provider = new GoogleAuthProvider();
 
+    const navigate = useNavigate();
 
-    // google authentication
-    // const auth = getAuth(app);
+    // google login
+    const googleProvider = new GoogleAuthProvider();
 
     const handleGoogleAuth = () => {
-        signInWithPopup(auth, provider)
+        signInWithPopup(auth, googleProvider)
             .then((result) => {
-                // This gives you a Google Access Token. You can use it to access the Google API.
-                const credential = GoogleAuthProvider.credentialFromResult(result);
-                const token = credential.accessToken;
-                // The signed-in user info.
                 const user = result.user;
-                // ...
-
-            }).catch((error) => {
-                // Handle Errors here.
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                // The email of the user's account used.
-                const email = error.customData.email;
-                // The AuthCredential type that was used.
-                const credential = GoogleAuthProvider.credentialFromError(error);
-                // ...
+                if (user) {
+                    toast.success(`Welcome ${user.displayName}`)
+                    navigate("/profile");
+                }
+            }).catch((err) => {
+                const errorMessage = err.message;
+                toast.error(errorMessage)
             });
     };
+
+    //github login
+
+    const githubProvider = new GithubAuthProvider();
+    const handleGithubAuth = () => {
+
+        signInWithPopup(auth, githubProvider)
+            .then((result) => {
+                const user = result.user;
+                if (user) {
+                    toast.success(`Welcome ${user.displayName}`)
+                    navigate("/profile");
+                }
+            }).catch((err) => {
+                const errorMessage = err.message;
+                toast.error(errorMessage)
+            });
+
+    }
 
 
     return (
@@ -44,7 +58,7 @@ const SocialLogin = () => {
                 </Button>
             </div>
             <div className="me-2">
-                <Button variant="outline-dark">
+                <Button onClick={handleGithubAuth} variant="outline-dark">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                         width="30" height="30"
                         viewBox="0 0 50 50"
