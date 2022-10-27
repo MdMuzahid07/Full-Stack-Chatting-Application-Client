@@ -21,11 +21,9 @@ const DropDownProfile = () => {
             if (user) {
                 setUser(user);
                 console.log(user)
-            } else {
-
             }
         });
-    }, []);
+    }, [user]);
 
 
     return (
@@ -35,7 +33,7 @@ const DropDownProfile = () => {
                     src={user?.photoURL ? user?.photoURL : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o04d9prZDVWlxJpl_atIHLQ6gUxxjjku4kpkRRozFXmx3LRqeuVLKiG2XIgq7U-nQTk&usqp=CA"}
                     width="50"
                     height="50"
-                    className="rounded-circle border border-2 border-light"
+                    className="rounded-circle border border-2 border-light img-custom"
                     alt="profile_image"
                 />
             </Dropdown.Toggle>
@@ -46,7 +44,7 @@ const DropDownProfile = () => {
                         src={user?.photoURL ? user?.photoURL : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6o04d9prZDVWlxJpl_atIHLQ6gUxxjjku4kpkRRozFXmx3LRqeuVLKiG2XIgq7U-nQTk&usqp=CA"}
                         width="50"
                         height="50"
-                        className=" rounded-circle border border-2 border-dark"
+                        className=" rounded-circle border border-2 border-dark img-custom"
                         alt="profile_image"
                     />
                 </Dropdown.Item>

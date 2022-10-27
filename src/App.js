@@ -18,7 +18,7 @@ function App() {
         navigate("/")
       }
     });
-  }, []);
+  }, [navigate]);
 
   return (
     <section className="px-0">

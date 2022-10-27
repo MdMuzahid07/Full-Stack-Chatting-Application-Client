@@ -1,7 +1,17 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Button, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { auth } from '../../authentication/firebaseInitial';
 const BottomNav = () => {
+    const handleSignOut = () => {
+        signOut(auth).then(() => {
+            toast.success("LogOut successful");
+        }).catch((err) => {
+            toast.error(err.message);
+        });
+    };
     return (
         <div className="d-lg-none bottom-navbar">
             <Dropdown>
@@ -37,7 +47,7 @@ const BottomNav = () => {
                     </Dropdown.Item>
                     <Dropdown.Divider />
                     <Dropdown.Item>
-                        <Button variant="">
+                        <Button onClick={handleSignOut} variant="">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M5 21.2q-.95 0-1.612-.662-.663-.663-.663-1.613V5.075q0-.95.663-1.613Q4.05 2.8 5 2.8h7.05v2.275H5v13.85h7.05V21.2Zm11-3.925-1.575-1.625 2.525-2.5H8.9v-2.3h8.05l-2.525-2.5L16 6.725 21.275 12Z" /></svg>
                             <span className="text-dark fw-bold ms-2">LogOut</span>
                         </Button>
