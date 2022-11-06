@@ -51,7 +51,7 @@ const SignUp = () => {
                                 <button type="submit" className="btn btn-outline btn-light rounded-pill">Submit</button>
                             </form>
                         </div>
-                        <p><small>Already have a account<Link to="/login"><span className="text-primary fw-bold ms-2">Login</span></Link></small></p>
+                        <p><small>Already have a account<Link to="/"><span className="text-primary fw-bold ms-2">Login</span></Link></small></p>
                         <div>
                             <SocialLogin />
                         </div>

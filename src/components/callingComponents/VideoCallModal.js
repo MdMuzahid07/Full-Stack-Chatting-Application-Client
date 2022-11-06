@@ -24,7 +24,7 @@ const VideoCallModal = () => {
                             minWidth: "100%",
                         }}>
                         <div>
-                            <iframe src="https://giphy.com/embed/gkIfMqsdfMKuQ" width="480" height="472" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                            <iframe src="https://giphy.com/embed/gkIfMqsdfMKuQ" width="480" height="472" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
                         </div>
                     </div>
                 </Modal.Body>

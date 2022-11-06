@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { Route, Routes } from 'react-router-dom';
 import Header from '../components/header/Header';
+import Error404 from './Error404';
 import InboxFooter from './Inbox/footer/InboxFooter';
 import InboxHeader from './Inbox/header/InboxHeader';
 import Inbox from './Inbox/Inbox';
@@ -29,6 +30,7 @@ const Main = () => {
                                     <Route path="/groups" element={<Groups />} />
                                     <Route path="/addFriends" element={<AddFriends />} />
                                     <Route path="/settings" element={<Settings />} />
+                                    <Route path="/*" element={<Error404 />} />
                                 </Routes>
                             </div>
                         </Col>
