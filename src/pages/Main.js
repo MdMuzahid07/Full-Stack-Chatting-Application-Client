@@ -26,7 +26,7 @@ const Main = () => {
                             <div className="max-height bg-lightBlue text-white">
                                 <Routes>
                                     <Route path="/chats" element={<Chats />} />
-                                    <Route path="/profile" element={<Profile />} />
+                                    <Route path="/" element={<Profile />} />
                                     <Route path="/groups" element={<Groups />} />
                                     <Route path="/addFriends" element={<AddFriends />} />
                                     <Route path="/settings" element={<Settings />} />

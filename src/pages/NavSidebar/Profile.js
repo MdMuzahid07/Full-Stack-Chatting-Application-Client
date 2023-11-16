@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProfileAccordion from '../../components/profileComponents/ProfileAccordion';
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from '../../authentication/firebaseInitial';
+import { auth } from '../../firebase.init';
 
 const Profile = () => {
 

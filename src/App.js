@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect } from "react";
 import ReactToastContainer from "./components/reactToastContainer/ReactToastContainer";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "./authentication/firebaseInitial";
+import { auth } from "./firebase.init";
 
 function App() {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (!user) {
-        navigate("/");
+        navigate("/login");
       }
     });
   }, []);
@@ -23,7 +23,7 @@ function App() {
   return (
     <section className="px-0">
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/signUp" element={<SignUp />} />
       </Routes>
       <Main />

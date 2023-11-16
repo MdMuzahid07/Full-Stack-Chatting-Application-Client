@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { auth } from '../../authentication/firebaseInitial';
+import { auth } from '../../firebase.init';
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { toast } from 'react-toastify';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { signInWithPopup, GoogleAuthProvider, GithubAuthProvider, FacebookAuthProvider } from "firebase/auth";
 
 import { Button } from 'react-bootstrap';
-import { auth } from '../../authentication/firebaseInitial';
+import { auth } from '../../firebase.init';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 

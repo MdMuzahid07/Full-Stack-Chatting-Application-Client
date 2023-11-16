@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from '../../authentication/firebaseInitial';
+import { auth } from '../../firebase.init';
 import { toast } from 'react-toastify';
 
 const SignUp = () => {

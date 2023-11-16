@@ -3,7 +3,7 @@ import React from 'react';
 import { Button, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { auth } from '../../authentication/firebaseInitial';
+import { auth } from '../../firebase.init';
 const BottomNav = () => {
     const handleSignOut = () => {
         signOut(auth).then(() => {
