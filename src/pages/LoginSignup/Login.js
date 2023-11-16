@@ -19,7 +19,7 @@ const Login = () => {
             .then((userCredential) => {
 
                 if (userCredential.user) {
-                    navigate("/profile")
+                    navigate("/")
                     toast.success(`Welcome ${userCredential.user.email}`);
                 };
             })

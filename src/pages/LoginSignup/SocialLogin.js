@@ -19,7 +19,7 @@ const SocialLogin = () => {
                 const user = result.user;
                 if (user) {
                     toast.success(`Welcome ${user.displayName}`)
-                    navigate("/profile");
+                    navigate("/");
                 }
             }).catch((err) => {
                 const errorMessage = err.message;
