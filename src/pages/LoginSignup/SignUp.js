@@ -4,7 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../../firebase.init';
-import { toast } from 'react-toastify';
+import { toast } from 'react-hot-toast';
+
 
 const SignUp = () => {
 
@@ -34,7 +35,7 @@ const SignUp = () => {
 
     return (
         <section className="d-flex justify-content-center align-items-center custom-signUp-login">
-            <div className="bg-black text-white p-5">
+            <div className="bg-black text-white p-5 rounded-4">
                 <Row className="g-4">
                     <Col>
                         <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="" />
@@ -51,7 +52,7 @@ const SignUp = () => {
                                 <button type="submit" className="btn btn-outline btn-light rounded-pill">Submit</button>
                             </form>
                         </div>
-                        <p><small>Already have a account<Link to="/"><span className="text-primary fw-bold ms-2">Login</span></Link></small></p>
+                        <p><small>Already have a account<Link to="/login"><span className="text-primary fw-bold ms-2">Login</span></Link></small></p>
                         <div>
                             <SocialLogin />
                         </div>

@@ -3,7 +3,8 @@ import { Button, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { auth } from '../../firebase.init';
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { toast } from 'react-toastify';
+import { toast } from 'react-hot-toast';
+
 
 const DropDownProfile = () => {
     const [user, setUser] = useState();

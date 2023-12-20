@@ -4,7 +4,8 @@ import { signInWithPopup, GoogleAuthProvider, GithubAuthProvider, FacebookAuthPr
 import { Button } from 'react-bootstrap';
 import { auth } from '../../firebase.init';
 import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { toast } from 'react-hot-toast';
+
 
 const SocialLogin = () => {
 

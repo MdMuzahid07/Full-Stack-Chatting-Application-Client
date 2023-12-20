@@ -2,7 +2,8 @@ import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Button, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { toast } from 'react-hot-toast';
+
 import { auth } from '../../firebase.init';
 const BottomNav = () => {
     const handleSignOut = () => {

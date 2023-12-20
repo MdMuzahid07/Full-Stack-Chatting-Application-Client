@@ -2,7 +2,8 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { toast } from 'react-hot-toast';
+
 import { auth } from '../../firebase.init';
 import SocialLogin from './SocialLogin';
 
@@ -30,7 +31,7 @@ const Login = () => {
 
     return (
         <section className=" d-flex justify-content-center align-items-center custom-signUp-login">
-            <div className="bg-black text-white p-5">
+            <div className="bg-black rounded-4 text-white p-5">
                 <Row className="g-4 p-2">
                     <Col>
                         <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="" />

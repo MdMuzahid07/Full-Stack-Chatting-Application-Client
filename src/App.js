@@ -8,6 +8,7 @@ import React, { useEffect } from "react";
 import ReactToastContainer from "./components/reactToastContainer/ReactToastContainer";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase.init";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const navigate = useNavigate();
@@ -29,6 +30,7 @@ function App() {
       <Main />
       <BottomNav />
       <ReactToastContainer />
+      <Toaster />
     </section>
   );
 }
