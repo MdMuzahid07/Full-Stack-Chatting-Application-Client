@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
+import React, { Children, useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import InboxFooter from './footer/InboxFooter';
 import InboxHeader from './header/InboxHeader';
 import MessageBox from './MessageBox';
 
-const ResponsiveChatBoxModal = () => {
+const ResponsiveChatBoxModal = ({ img }) => {
     const [fullscreen, setFullscreen] = useState(true);
     const [show, setShow] = useState(false);
 
@@ -15,10 +14,9 @@ const ResponsiveChatBoxModal = () => {
     }
 
     return (
-        <>
+        <div className="d-flex d-lg-none">
             <div onClick={() => handleShow(true)}>
-                <img className="border border-2 img-custom" style={{ height: "60px", width: "60px", borderRadius: "50%" }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Stray_kitten_Rambo002.jpg/1200px-Stray_kitten_Rambo002.jpg" alt="" />
-                {/* <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m22.2 22.2-4-4H4.075q-.95 0-1.613-.662-.662-.663-.662-1.613V4.075q0-.95.662-1.613.663-.662 1.613-.662h15.85q.95 0 1.613.662.662.663.662 1.613ZM4.075 4.075v11.85h14.9l.95.975V4.075H4.075Zm0 0V16.9 4.075Z" /></svg><span className="text-dark fw-bold ms-2">Chats</span> */}
+                {img}
             </div>
             <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header closeButton>
@@ -67,7 +65,7 @@ const ResponsiveChatBoxModal = () => {
                     </div>
                 </Modal.Body>
             </Modal>
-        </>
+        </div>
     );
 };
 

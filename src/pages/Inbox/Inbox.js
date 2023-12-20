@@ -22,12 +22,6 @@ const Inbox = () => {
             <MessageBox />
             <MessageBox />
             <MessageBox />
-            <MessageBox />
-            <MessageBox />
-            <MessageBox />
-            <MessageBox />
-            <MessageBox />
-            <MessageBox />
         </section>
     );
 };
